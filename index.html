@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="style.css">
+<title>Todo list Application </title>
+</head>
+<body>
+         <center>
+  
+<div class="container">
+    <div class="row">
+        <div class="col mx-auto col-md-8 mt-3 text-center">
+        <div class="alert align-items-center" id="message"></div>
+        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/businessman-working-in-office-3378972-2813632@0.png" alt="">
+      
+        <form id="itemForm" >
+            <h3 class=""> Todo List Application </h3>
+            <div class="input-group mb-3">
+                <input placeholder="Enter Your todo" type="text" class="form-control"  id="itemInput" value="" placeholder="Please Enter your todo list!">
+                <button class="btn btn-outline-primary active">ADD ITEM</button>
+            </div>
+        </form>
+        <ul class="nav nav-pills flex-column flex-sm-row">
+            <li class="nav-item" data-type="all">
+              <a class="nav-link active" href="#">All</a>
+            </li>
+            <li class="nav-item" data-type="todo">
+              <a class="nav-link" href="#">To Do</a>
+            </li>
+            <li class="nav-item" data-type="done">
+              <a class="nav-link" href="#">Completed</a>
+            </li>
+          </ul>
+        <!-- list items -->
+        <ul class="list-group list-group-flush" id="itemList"></ul>
+        <input type="hidden" id="filterType" value="all">
+        <input type="hidden" id="citem" value="">
+      
+        </div>
+    </div>
+          </center>
+</div>
+<script src="./script.js"></script>a
+</body>
+</html>
